@@ -16,7 +16,8 @@ namespace Exersise5A
             //Print_a_2_z_v3();
             //Print_A_2_Z();
             //Console.WriteLine(IsLower('A'));
-            Console.WriteLine(IsUpper('c'));
+            //Console.WriteLine(IsUpper('c'));
+            Console.WriteLine(ToUpper('b'));
                 //Char2Code
             //while (true)
             //{
@@ -96,10 +97,11 @@ namespace Exersise5A
         public static char ToUpper(char c)
         {
             string s = "abcdfeghijklmnoprstuvwxyz";
+            string s1 = "ABCDEFGHIJKLMNOPRSTUWXYZ";
             for (int i = 0; i < s.Length; i++)
             {
-                if (c != s[i])
-                    return c;
+                if (c == s[i])
+                    return s1[i];
             }
 
                 return c;
